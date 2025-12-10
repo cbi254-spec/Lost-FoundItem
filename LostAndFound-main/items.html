@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Items • Campus Lost & Found</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="items">
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="images/minorProjectLogo.png" alt="Logo" class="nav-logo">Campus Lost & Found</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="lost.html">Report Lost</a>
+        <a href="found.html">Report Found</a>
+        <a href="items.html" class="active">View Items</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>View Lost & Found Items</h1>
+      <p class="subtle">Browse lost and found items reported in the campus. This is a demo listing with sample data.</p>
+
+      <div class="tabs">
+        <button class="tab active" data-target="#lostTab">Lost Items</button>
+        <button class="tab" data-target="#foundTab">Found Items</button>
+      </div>
+
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search by name, category, location" />
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option>Wallet</option>
+          <option>ID Card</option>
+          <option>Bottle</option>
+          <option>Bag</option>
+          <option>Notebook</option>
+          <option>Electronics</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div id="lostTab" class="tab-panel active">
+        <h2 style="margin-top:24px;margin-bottom:16px;color:var(--olive);font-size:1.5rem;font-weight:700;">Recently Lost Items</h2>
+        <div id="lostList" class="cards-grid"></div>
+        <p class="notes">To claim an item from a finder, you must correctly describe the item (color, brand, unique marks, etc.).</p>
+      </div>
+
+      <div id="foundTab" class="tab-panel">
+        <h2 style="margin-top:24px;margin-bottom:16px;color:var(--olive);font-size:1.5rem;font-weight:700;">Recently Found Items</h2>
+        <div id="foundList" class="cards-grid"></div>
+        <p class="notes">Finders do not upload item photos. They verify ownership by asking the claimant to describe the item.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Campus Lost & Found | Developed by Bhumika Sonekar (0157CS231059) &amp; Chanchal Bairagi (0157CS231060), CSE 3rd Year, LNCTS Bhopal</small>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

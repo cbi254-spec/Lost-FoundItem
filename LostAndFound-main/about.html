@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About • Campus Lost & Found</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="about">
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="images/minorProjectLogo.png" alt="Logo" class="nav-logo">Campus Lost & Found</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="lost.html">Report Lost</a>
+        <a href="found.html">Report Found</a>
+        <a href="items.html">View Items</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>About Campus Lost & Found</h1>
+
+      <h2>Problem Statement</h2>
+      <p>Students often lose their belongings inside the college campus (ID cards, wallets, bottles, etc.). There is no centralized digital system to help them report or recover items easily.</p>
+
+      <h2>Objectives</h2>
+      <ul>
+        <li>Provide a simple interface to report lost items with photos.</li>
+        <li>Allow reporting of found items without exposing detailed photos.</li>
+        <li>Enable browsing of lost &amp; found lists in one place.</li>
+        <li>Build a frontend prototype that can later be connected to a backend.</li>
+      </ul>
+
+      <h2>Scope (Frontend Only)</h2>
+      <p>This project currently includes only HTML/CSS/JS, using dummy data and optional localStorage for demonstration. No real login or database.</p>
+
+      <h2>How the System Works</h2>
+      <ul>
+        <li>Lost item owner submits a form with photo and details.</li>
+        <li>Finder submits a form without photo.</li>
+        <li>Both can check the lists on the “View Items” page.</li>
+        <li>In real life, they meet and the finder asks the claimant to correctly describe the item before returning it.</li>
+      </ul>
+
+      <h2>Future Scope</h2>
+      <ul>
+        <li>Add backend with Node.js / PHP and a real database (MySQL).</li>
+        <li>Implement user authentication via college email.</li>
+        <li>Admin panel to approve or delete entries.</li>
+        <li>Email notifications or SMS alerts.</li>
+        <li>AI-based matching between lost and found items.</li>
+      </ul>
+
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>LocalStorage for demo data</li>
+      </ul>
+
+      <h2>Developer Info</h2>
+      <p>
+        <strong>Developed By:</strong><br>
+        Bhumika Sonekar (Enrollment: 0157CS231059)<br>
+        Chanchal Bairagi (Enrollment: 0157CS231060)<br>
+        <strong>Institute:</strong> LNCTS, Bhopal<br>
+        <strong>Program / Branch / Year:</strong> B.Tech CSE, 3rd Year
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Campus Lost & Found | Developed by Bhumika Sonekar (0157CS231059) &amp; Chanchal Bairagi (0157CS231060), CSE 3rd Year, LNCTS Bhopal</small>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

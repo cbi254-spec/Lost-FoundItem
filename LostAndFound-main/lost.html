@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Lost Item • Campus Lost & Found</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="lost">
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="images/minorProjectLogo.png" alt="Logo" class="nav-logo">Campus Lost & Found</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="lost.html" class="active">Report Lost</a>
+        <a href="found.html">Report Found</a>
+        <a href="items.html">View Items</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Report Lost Item</h1>
+      <p class="subtle">Fill the details below. Fields marked with * are required.</p>
+      <div id="lostFormMsg" class="form-msg" aria-live="polite"></div>
+      <form id="lostForm" novalidate>
+        <div class="form-grid">
+          <label>Item Name*<input type="text" id="itemName" required placeholder="e.g., Black Wallet" /></label>
+          <label>Category*
+            <select id="category" required>
+              <option value="">Select category</option>
+              <option>Wallet</option>
+              <option>ID Card</option>
+              <option>Bottle</option>
+              <option>Bag</option>
+              <option>Notebook</option>
+              <option>Electronics</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Last Seen Location*<input type="text" id="lastSeen" required placeholder="e.g., Library 2nd floor" /></label>
+          <label>Date Lost*<input type="date" id="dateLost" required /></label>
+          <label class="full">Description*<textarea id="description" required rows="4" placeholder="Short description"></textarea></label>
+          <label>Unique Marks / Identification<input type="text" id="uniqueMarks" placeholder="Optional" /></label>
+          <label>Contact Information*<input type="text" id="contact" required placeholder="email or phone" /></label>
+          <label class="full">Upload Photo<input type="file" id="photo" accept="image/*" /></label>
+        </div>
+        <div class="preview" id="photoPreviewWrap" hidden>
+          <img id="photoPreview" alt="Preview" />
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-grey" type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Campus Lost & Found | Developed by Bhumika Sonekar (0157CS231059) &amp; Chanchal Bairagi (0157CS231060), CSE 3rd Year, LNCTS Bhopal</small>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
